@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="SqlSessionTest" project="Spring02" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="edu.spring.ex02.SqlSessionTest" time="0.177" displayname="SqlSessionTest" uniqueid="[engine:junit-vintage]/[runner:edu.spring.ex02.SqlSessionTest]">
-    <testcase name="testInsert" classname="edu.spring.ex02.SqlSessionTest" time="0.177" displayname="testInsert" uniqueid="[engine:junit-vintage]/[runner:edu.spring.ex02.SqlSessionTest]/[test:testInsert(edu.spring.ex02.SqlSessionTest)]"/>
-  </testsuite>
-</testrun>

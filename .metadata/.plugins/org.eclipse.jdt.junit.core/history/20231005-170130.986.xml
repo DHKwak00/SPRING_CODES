@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="BoardDAOTest" project="Spring02" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="edu.sping.ex02.BoardDAOTest" time="0.181" displayname="BoardDAOTest" uniqueid="[engine:junit-vintage]/[runner:edu.sping.ex02.BoardDAOTest]">
-    <testcase name="testDAO" classname="edu.sping.ex02.BoardDAOTest" time="0.181" displayname="testDAO" uniqueid="[engine:junit-vintage]/[runner:edu.sping.ex02.BoardDAOTest]/[test:testDAO(edu.sping.ex02.BoardDAOTest)]"/>
-  </testsuite>
-</testrun>
