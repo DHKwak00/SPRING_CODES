@@ -1,0 +1,5 @@
+package edu.sping.ex02.domain;
+
+public class BoardVO {
+
+}

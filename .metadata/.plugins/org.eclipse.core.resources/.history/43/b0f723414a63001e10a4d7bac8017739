@@ -1,0 +1,12 @@
+package edu.sping.ex02.domain;
+
+import java.util.Date;
+
+public class BoardVO {
+	private int boardId;
+	private String boardTitle;
+	private String boardContent;
+	private String memeberId;
+	private Date boardDateCreated;
+	private int replyCnt;
+}

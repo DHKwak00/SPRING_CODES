@@ -1,0 +1,8 @@
+package edu.spring.ex01.domain;
+
+public class ProductVO {
+	private String name;
+	private int price;
+	
+	
+}
