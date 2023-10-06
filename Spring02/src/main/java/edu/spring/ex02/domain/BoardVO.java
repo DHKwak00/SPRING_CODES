@@ -12,13 +12,13 @@ public class BoardVO {
 	
 	public BoardVO() {}
 
-	public BoardVO(int boardId, String boardTitle, String boardContent, String memeberId, Date boardDateCreated,
+	public BoardVO(int boardId, String boardTitle, String boardContent, String memberId, Date boardDateCreated,
 			int replyCnt) {
 		super();
 		this.boardId = boardId;
 		this.boardTitle = boardTitle;
 		this.boardContent = boardContent;
-		this.memberId = memeberId;
+		this.memberId = memberId;
 		this.boardDateCreated = boardDateCreated;
 		this.replyCnt = replyCnt;
 	}
@@ -47,11 +47,11 @@ public class BoardVO {
 		this.boardContent = boardContent;
 	}
 
-	public String getMemeberId() {
+	public String getMemberId() {
 		return memberId;
 	}
 
-	public void setMemeberId(String memeberId) {
+	public void setMemberId(String memeberId) {
 		this.memberId = memeberId;
 	}
 
@@ -74,7 +74,7 @@ public class BoardVO {
 	@Override
 	public String toString() {
 		return "BoardVO [boardId=" + boardId + ", boardTitle=" + boardTitle + ", boardContent=" + boardContent
-				+ ", memeberId=" + memberId + ", boardDateCreated=" + boardDateCreated + ", replyCnt=" + replyCnt
+				+ ", memberId=" + memberId + ", boardDateCreated=" + boardDateCreated + ", replyCnt=" + replyCnt
 				+ "]";
 	}
 	

@@ -13,7 +13,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	 -->
 	 
 	 <properties>
-	 	<property name="test_board" value="test_board"/>
+	 	<property name="test_board" value="test_board"/> <!-- name = mapper에서 $ -->
 	 	<property name="boardId" value="board_id"/>
 	 	<property name="boardTitle" value="board_title"/>
 	 	<property name="boardContent" value="board_content"/>

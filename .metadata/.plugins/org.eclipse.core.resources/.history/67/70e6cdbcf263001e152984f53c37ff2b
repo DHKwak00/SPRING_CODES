@@ -1,0 +1,54 @@
+package edu.spring.ex02.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import edu.spring.ex02.domain.BoardVO;
+import edu.spring.ex02.pageutil.PageCriteria;
+
+@Service // @Component
+// * 서비스 계층 (Service/Business Layer)
+// - 표현 계층 (Presentation Layer)과 영속 계층(Persistence Layer)사이를
+//	 연결하여 두 계층이 직접적으로 통신하지 않도록 하는 역할
+// - 트랜젝션 (transaction) 관리
+// - DB와 상관없이 데이터를 처리 가능
+public class BoardServiceImple implements BoardService{
+
+	@Override
+	public int create(BoardVO vo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<BoardVO> read(PageCriteria criteria) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BoardVO read(int boardId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int update(BoardVO vo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int delete(int boardId) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getTotalCounts() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

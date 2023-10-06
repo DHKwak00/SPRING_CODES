@@ -1,0 +1,14 @@
+package edu.spring.ex02.controller;
+
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+
+@Controller // @Component
+// * 표현 계층(Presentation Layer)
+// - view(페이지)와 service를 연결하는 역할
+// - request에 대한 response를 전달하는 역할
+public class BoardController {
+	private static final Logger logger = 
+			LoggerFactory.getLogger(BoardController.class)
+
+}

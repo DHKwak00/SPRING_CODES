@@ -3,6 +3,7 @@ package edu.spring.ex02.persistence;
 import java.util.List;
 
 import edu.spring.ex02.domain.BoardVO;
+import edu.spring.ex02.pageutil.PageCriteria;
 
 public interface BoardDAO {
 	int insert(BoardVO vo);
@@ -10,4 +11,8 @@ public interface BoardDAO {
 	BoardVO select(int boardId);
 	int update(BoardVO vo);
 	int delete(int boardId);
+	List<BoardVO> select(PageCriteria criteria); // 페이징 리스트 데이터
+	int getTotalCounts(); // 총 개시글 수
+	List<BoardVO> select(String memberId); // 작성자 게시글 검색
+	List<BoardVO> selectByTitleOrContent(String keyword); // 제목 or 내용 검색
 }

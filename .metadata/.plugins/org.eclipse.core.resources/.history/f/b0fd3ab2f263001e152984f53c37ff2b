@@ -1,0 +1,46 @@
+package edu.spring.ex02.service;
+
+import java.util.List;
+
+import edu.spring.ex02.domain.BoardVO;
+import edu.spring.ex02.pageutil.PageCriteria;
+
+public class BoardServiceImple implements BoardService{
+
+	@Override
+	public int create(BoardVO vo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<BoardVO> read(PageCriteria criteria) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BoardVO read(int boardId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int update(BoardVO vo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int delete(int boardId) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getTotalCounts() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

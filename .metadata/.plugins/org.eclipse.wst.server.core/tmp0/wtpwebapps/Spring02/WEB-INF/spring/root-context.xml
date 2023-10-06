@@ -18,8 +18,9 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 		<property name="user" value="scott"></property>
 		<property name="password" value="tiger"></property>
 	</bean>
-
-	<bean id="sqlSessionFactory"
+	
+	<!-- close도 없음 -->
+	<bean id="sqlSessionFactory" 
 		class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="ds" /> <!-- ref 레퍼런스 뜻 = 참조 -->
 		<property name="configLocation"
