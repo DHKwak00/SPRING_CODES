@@ -19,6 +19,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	${key 이름} : mybatis-config.xml의 property의 name - name과 매칭. DB테이블의 컬럼명
 	#{key 이름} : dao 클래스의 sqlSession에서 전송받은 데이터 변수명(입력받은 데이터 > 쿼리의 ?가 # 자바사이드에서 넘어오는 값들)
 	 -->
+	 
+	 <!-- 
+	 	시퀀스를 안쓴이유 : 트리거 사용해서
+	  -->
 	 <insert id="insert">
 	 	insert into ${test_board}
 	 	(${boardTitle}, ${boardContent}, ${memberId})

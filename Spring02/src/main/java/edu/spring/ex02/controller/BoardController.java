@@ -64,15 +64,15 @@ public class BoardController {
 	
 	@PostMapping("/register")
 	public String registerPOST(BoardVO vo, RedirectAttributes reAttr) {
-		// RedirectAttributes
+		// RedirectAttributes  (request,response는 상위 레벨로 이미 존재하고 있음)
 		// - 리다이렉트시 데이터를 전달하기 위한 인터페이스
 		logger.info("registerPOST() 호출");
 		logger.info(vo.toString());
 		int result = boardService.create(vo);
 		logger.info(result + "행 삽입");
 		if(result == 1) {
-			reAttr.addFlashAttribute("insert_result", "success");
-			return "redirect:/board/list";
+			reAttr.addFlashAttribute("insert_result", "success"); // 보내고 끝!
+			return "redirect:/board/list"; // send redirect 
 		} else {
 			return "redirect:/board/register";
 		}
