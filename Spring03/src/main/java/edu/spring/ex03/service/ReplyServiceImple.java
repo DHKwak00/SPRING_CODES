@@ -32,7 +32,7 @@ public class ReplyServiceImple implements ReplyService {
 	
 	@Transactional(value = "transactionManager")
 	@Override
-	public int create(ReplyVO vo) {
+	public int create(ReplyVO vo) throws Exception{
 		// 댓글(test_reply의 데이터가 증가하면
 		// 게시판(test_board)의 댓글 개수(reply_cnt)가 변경되야 함
 		// test_reply 테이블에 insert를 수행하면
@@ -60,7 +60,7 @@ public class ReplyServiceImple implements ReplyService {
 
 	@Transactional(value = "transactionManager")
 	@Override
-	public int delete(int replyId, int boardId) {
+	public int delete(int replyId, int boardId) throws Exception{
 		logger.info("delete() 호출 ; replyId = " + replyId);
 		int resultDelete = replyDAO.delete(replyId);
 		logger.info(resultDelete + " 행 삭제 성공");

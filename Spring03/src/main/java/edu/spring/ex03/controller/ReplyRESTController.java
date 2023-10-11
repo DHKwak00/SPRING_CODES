@@ -43,7 +43,14 @@ public class ReplyRESTController {
 		// ResponseEntity<T> : REST 방식에서 데이터를 리턴할 때 쓰이는 객체
 		// - 데이터 HttpStatus를 전송
 		// - <T> : 보내고자 하는 타입
-		int result = replyService.create(vo);
+		int result = 0;
+		
+		try { // 트렌잭션을 사용해서 쓰는 예외처리
+			result = replyService.create(vo);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return new ResponseEntity<Integer>(result, HttpStatus.OK);
 
 	} // end createReply()
@@ -73,7 +80,14 @@ public class ReplyRESTController {
 			@RequestBody int boardId){
 		logger.info("replyId = " + replyId);
 		
-		int result = replyService.delete(replyId, boardId);
+		int result = 0;
+		
+		try {
+			result = replyService.delete(replyId, boardId);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return new ResponseEntity<Integer>(result, HttpStatus.OK);
 	}
 			
