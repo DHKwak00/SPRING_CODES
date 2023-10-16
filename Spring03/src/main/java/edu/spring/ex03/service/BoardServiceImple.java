@@ -21,7 +21,7 @@ public class BoardServiceImple implements BoardService{
 
 	@Override
 	public int create(BoardVO vo) {
-		logger.info("create() ȣ�� : vo = " + vo.toString());
+		logger.info("create() 호출 : vo = " + vo.toString());
 		return dao.insert(vo);
 	}
 
@@ -35,25 +35,25 @@ public class BoardServiceImple implements BoardService{
 
 	@Override
 	public BoardVO read(int boardId) {
-		logger.info("read() ȣ�� : boardId = " + boardId);
+		logger.info("read() 호출 : boardId = " + boardId);
 		return dao.select(boardId);
 	}
 
 	@Override
 	public int update(BoardVO vo) {
-		logger.info("update() ȣ�� : vo = " + vo.toString()); 
+		logger.info("update() 호출 : vo = " + vo.toString()); 
 		return dao.update(vo);
 	}
 
 	@Override
 	public int delete(int boardId) {
-		logger.info("delete() ȣ�� : boardId = " + boardId);
+		logger.info("delete() 호출 : boardId = " + boardId);
 		return dao.delete(boardId);
 	}
 
 	@Override
 	public int getTotalCounts() {
-		logger.info("getTotalCounts() ȣ��");
+		logger.info("getTotalCounts() 호출");
 		return dao.getTotalCounts();
 	}
 
